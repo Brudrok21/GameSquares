@@ -1,11 +1,11 @@
 import fun_confetti_animation from './fun_confetti_animation.js'
-
+import saveCookie from "./saveCookie.js"
 
 let moves = document.querySelector("#moves"),
 timer_block = document.querySelector("#timer_block"),
 CreateSquaresField = document.querySelector("#CreateSquaresField");  
 
-function fun_click_squares(squares, OBJ_LINE, count_moves,ARR_GRID,timer) { 
+function fun_click_squares(squares, OBJ_LINE, count_moves, ARR_GRID, timer, COOKIE_INFO, count_min, count_sec) { 
 
   let maxLenghtnSquares = Number(select_x.value) * Number(select_y.value);
   const values = [...Array(maxLenghtnSquares -1)].map((_, i) => i + 1);
@@ -43,7 +43,7 @@ function fun_click_squares(squares, OBJ_LINE, count_moves,ARR_GRID,timer) {
         }
 
         fun_search_disabled(squares);
-        fun_finish(ARR_GRID,values,timer);
+        fun_finish(ARR_GRID,values,timer,COOKIE_INFO, count_min, count_sec,count_moves);
         last_btn = ""; 
       });
     })
@@ -73,13 +73,25 @@ function fun_go_swap(this_squares, last_btn, OBJ_LINE, count_moves) {
   moves.textContent = count_moves;
 }
 
-function fun_finish(ARR_GRID,values,timer){  
+function fun_finish(ARR_GRID,values,timer,COOKIE_INFO, count_min, count_sec,count_moves){  
+ let name_q;
+ let save_q;
   if(ARR_GRID.join() == values.join()){
     clearInterval(timer)
     timer_block.classList.add("vibrate-1");
     moves.classList.add("vibrate-1");
     CreateSquaresField.setAttribute("disabled", "disabled");
     fun_confetti_animation();
+
+    COOKIE_INFO.history = {
+      Mapas: select_x+" x "+select_y,
+      Time:count_min+":"+count_sec,
+      Moves:count_moves,
+      date: new Date 
+    }
+    name_q = "history";
+    save_q = COOKIE_INFO.history;
+    saveCookie(name_q, save_q, COOKIE_INFO);
   } 
 }
 export default fun_click_squares;
