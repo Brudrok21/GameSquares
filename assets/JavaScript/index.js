@@ -1,7 +1,8 @@
 import fun_CreateRandomArrGrid from './modules/fun_CreateRandomArrGrid.js'
 import fun_CreateObj_Line from "./modules/fun_CreateObj_Line.js"
 import fun_CreateSquaresField from "./modules/fun_CreateSquaresField.js"
-import fun_click_squares from "./modules/fun_click_squares.js"
+import fun_click_squares from "./modules/fun_click_squares.js" 
+import fun_confetti_animation from './modules/fun_confetti_animation.js'
 
 let test = document.querySelector("#test");
 let CreateSquaresField = document.querySelector("#CreateSquaresField"),
@@ -17,7 +18,7 @@ let count_min = 0;
 let timer;
 function fun_timer() {
   timer = setInterval(() => {
-    count_sec++; 
+    count_sec++;
     if (count_sec < 10) {
       sec.textContent = "0" + count_sec;
     } else if (count_sec >= 10) {
@@ -28,7 +29,7 @@ function fun_timer() {
       count_min++;
       if (count_min < 10) {
         min.textContent = "0" + count_min;
-      } else if (count_min >= 10) { 
+      } else if (count_min >= 10) {
         min.textContent = count_min;
       }
     }
@@ -51,20 +52,23 @@ Confirm_x_y.addEventListener("click", () => {
   sec.textContent = "0" + count_sec;
   count_moves = 0;
   moves.textContent = count_moves;
+  CreateSquaresField.removeAttribute("disabled");
   //
 
   fun_CreateRandomArrGrid(select_x, select_y, ARR_GRID);
   fun_CreateObj_Line(select_x, select_y, OBJ_LINE, ARR_GRID);
 
- 
+  fun_timer();
+
   //--
   fun_CreateSquaresField(OBJ_LINE, CreateSquaresField);
   squares = document.querySelectorAll(".squares");
-  fun_click_squares(squares, OBJ_LINE, count_moves)
+  fun_click_squares(squares, OBJ_LINE, count_moves, ARR_GRID, timer);
   //--
-  fun_timer();
-  console.log(OBJ_LINE)
+  // fun_confetti_animation();
+  console.log(ARR_GRID)
 });
+ 
 
 
 // test.addEventListener("click", () => {

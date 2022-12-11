@@ -10,9 +10,17 @@
 body{
   background: #0e0e0e;
   color: #fff;
-  width: 625px;
-  margin      :auto;
+  max-width: 625px;
+  margin      :auto; 
+  overflow-x: hidden;
 }
+#CreateSquaresField[disabled="disabled"]{
+  pointer-events: none; 
+}
+ #finish_animation{
+  width: 100%;
+ }
+ 
 .select_style {
   width: 75px !important;
   padding: 10px 0px;
@@ -111,3 +119,79 @@ body{
 .style_box_next>div:last-child {
   border-radius: 0px 0px 10px 10px;
 }
+
+
+.confetti{
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;   
+}
+.div_confetti{ 
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+ 
+/* Animation */
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear 3 both;
+	        animation: vibrate-1 0.3s linear 3 both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+ 
+ 
