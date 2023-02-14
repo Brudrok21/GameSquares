@@ -2,74 +2,142 @@
 <html lang="en">
 
 <head>
-  <title>15 Classic Puzzle Game</title>
+  <title>GAME SQUARES</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="shortcut icon" href="./assets/images/4733252_basic_menu_other_outline_ui_icon.png" type="image/png">
+  <link rel="shortcut icon" href="./assets/images/logo.svg" type="logo">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/Style/bootstrap-grid.css">
+  <link rel="stylesheet" href="./assets/Style/bootstrap.css">
   <link rel="stylesheet" href="./assets/Style/style.css">
 </head>
 
 <body>
-  <header class="none">
-    <!-- place navbar here -->
-    <img src="./assets/images/confetti/1.png">
-    <img src="./assets/images/confetti/2.png">
-    <img src="./assets/images/confetti/3.png">
-    <img src="./assets/images/confetti/4.png">
-    <img src="./assets/images/confetti/5.png">
-    <img src="./assets/images/confetti/6.png">
-    <img src="./assets/images/confetti/7.png">
-    <img src="./assets/images/confetti/8.png">
-    <img src="./assets/images/confetti/9.png">
-  </header>
-
   <main>
-    <div class="container">
+    <div class="bg_animation">
+      <div class="flight_anim" delay="0ms" left="3">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="750ms" left="15">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="1500ms" left="10">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="2250ms" left="15">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="3000ms" left="5">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="3750ms" left="18">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="4500ms" left="3">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="5250ms" left="9">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="5750ms" left="18">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+
+
+      <div class="flight_anim" delay="0ms" left="93">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="750ms" left="85">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="1500ms" left="78">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="2250ms" left="90">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="3000ms" left="80">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="3750ms" left="93">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="4500ms" left="78">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="5000ms" left="90">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+      <div class="flight_anim" delay="5750ms" left="83">
+        <cube color="none" class="cube_border"><span class="cube_bg"></span></cube>
+      </div>
+    </div>
+
+    <div id="main_container" class="container bg_container" color="none">
       <div class="row">
         <div id="finish_animation"></div>
 
-        <div class="py-5 d-flex justify-content-center align-items-center flex-wrap">
-          <div class="col-12 col-md-6 d-flex align-items-center text-center">
-            <h1>15 Classic Puzzle Game</h1>
+        <div class="py-5 pb-1 d-flex justify-content-center flex-wrap">
+
+          <div
+            class="col-12 col-md-6 d-flex text-center position-relative justify-content-center align-items-center maxW510">
+            <svg id="animSVGlogo" width="100%" height="125" viewBox="0 0 370 172" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="animSVGlogoname"
+                d="M167.147 67.75C161.997 67.75 157.422 66.625 153.422 64.375C149.422 62.075 146.322 58.9 144.122 54.85C141.922 50.75 140.822 46.1 140.822 40.9C140.822 35.6 141.972 30.9 144.272 26.8C146.572 22.7 149.697 19.525 153.647 17.275C157.647 15.025 162.072 13.9 166.922 13.9C170.822 13.9 174.222 14.375 177.122 15.325C180.072 16.275 182.897 17.6 185.597 19.3C185.997 19.5 186.347 19.85 186.647 20.35C186.947 20.85 187.097 21.4 187.097 22C187.097 22.85 186.797 23.575 186.197 24.175C185.647 24.775 184.897 25.075 183.947 25.075C183.397 25.075 182.872 24.95 182.372 24.7C180.022 23.3 177.672 22.25 175.322 21.55C172.972 20.85 170.422 20.5 167.672 20.5C163.872 20.5 160.447 21.3 157.397 22.9C154.347 24.5 151.947 26.85 150.197 29.95C148.497 33 147.647 36.65 147.647 40.9C147.647 44.8 148.447 48.3 150.047 51.4C151.697 54.45 154.047 56.875 157.097 58.675C160.197 60.425 163.847 61.3 168.047 61.3C172.747 61.3 177.122 60.2 181.172 58V44.425H168.797C167.947 44.425 167.222 44.125 166.622 43.525C166.022 42.925 165.722 42.2 165.722 41.35C165.722 40.5 166.022 39.775 166.622 39.175C167.222 38.575 167.947 38.275 168.797 38.275H183.572C184.572 38.275 185.422 38.625 186.122 39.325C186.822 40.025 187.172 40.875 187.172 41.875V58.9C187.172 59.95 186.897 60.9 186.347 61.75C185.847 62.55 185.172 63.15 184.322 63.55C178.722 66.35 172.997 67.75 167.147 67.75ZM200.584 67.375C199.584 67.375 198.759 67.05 198.109 66.4C197.509 65.75 197.209 64.95 197.209 64C197.209 63.6 197.334 63.1 197.584 62.5L216.709 17.35C217.109 16.45 217.659 15.725 218.359 15.175C219.109 14.575 220.009 14.275 221.059 14.275H221.809C222.859 14.275 223.734 14.575 224.434 15.175C225.184 15.725 225.759 16.45 226.159 17.35L245.284 62.5C245.534 63.1 245.659 63.6 245.659 64C245.659 64.95 245.334 65.75 244.684 66.4C244.084 67.05 243.284 67.375 242.284 67.375C241.584 67.375 240.934 67.2 240.334 66.85C239.784 66.45 239.359 65.925 239.059 65.275L234.184 53.575H208.684L203.809 65.275C203.509 65.925 203.059 66.45 202.459 66.85C201.909 67.2 201.284 67.375 200.584 67.375ZM211.309 47.35H231.559L221.434 22.975L211.309 47.35ZM260.067 67.375C259.117 67.375 258.317 67.05 257.667 66.4C257.017 65.75 256.692 64.95 256.692 64V19.225C256.692 17.875 257.167 16.725 258.117 15.775C259.067 14.775 260.217 14.275 261.567 14.275H264.042C265.042 14.275 265.942 14.575 266.742 15.175C267.592 15.775 268.217 16.525 268.617 17.425L285.642 59.875L302.667 17.425C303.067 16.525 303.667 15.775 304.467 15.175C305.317 14.575 306.242 14.275 307.242 14.275H309.717C311.067 14.275 312.217 14.775 313.167 15.775C314.117 16.725 314.592 17.875 314.592 19.225V64C314.592 64.95 314.267 65.75 313.617 66.4C312.967 67.05 312.167 67.375 311.217 67.375C310.267 67.375 309.442 67.05 308.742 66.4C308.092 65.75 307.767 64.95 307.767 64V21.4L290.442 64.225C290.042 65.175 289.392 65.95 288.492 66.55C287.642 67.1 286.692 67.375 285.642 67.375C284.592 67.375 283.617 67.1 282.717 66.55C281.867 65.95 281.242 65.175 280.842 64.225L263.517 21.4V64C263.517 64.95 263.167 65.75 262.467 66.4C261.817 67.05 261.017 67.375 260.067 67.375ZM332.503 67C331.553 67 330.753 66.675 330.103 66.025C329.453 65.375 329.128 64.575 329.128 63.625V18.1C329.128 17.15 329.453 16.35 330.103 15.7C330.753 15 331.553 14.65 332.503 14.65H362.578C363.478 14.65 364.228 14.975 364.828 15.625C365.478 16.225 365.803 16.975 365.803 17.875C365.803 18.775 365.478 19.525 364.828 20.125C364.228 20.725 363.478 21.025 362.578 21.025H335.953V37.6H359.878C360.778 37.6 361.528 37.925 362.128 38.575C362.778 39.175 363.103 39.925 363.103 40.825C363.103 41.725 362.778 42.475 362.128 43.075C361.528 43.675 360.778 43.975 359.878 43.975H335.953V60.625H362.578C363.478 60.625 364.228 60.95 364.828 61.6C365.478 62.2 365.803 62.95 365.803 63.85C365.803 64.75 365.478 65.5 364.828 66.1C364.228 66.7 363.478 67 362.578 67H332.503ZM25.8526 153.75C19.5026 153.75 13.5526 152.55 8.00264 150.15C7.40264 149.9 6.90264 149.5 6.50264 148.95C6.10264 148.35 5.90264 147.725 5.90264 147.075C5.90264 146.225 6.17764 145.5 6.72764 144.9C7.32764 144.25 8.07764 143.925 8.97764 143.925C9.47764 143.925 9.95264 144.025 10.4026 144.225C15.0026 146.275 19.9276 147.3 25.1776 147.3C33.9276 147.3 38.3026 144.425 38.3026 138.675C38.3026 137.175 37.7276 135.925 36.5776 134.925C35.4776 133.925 34.1026 133.15 32.4526 132.6C30.8026 132 28.4526 131.3 25.4026 130.5C21.3526 129.45 18.0776 128.45 15.5776 127.5C13.0776 126.5 10.9276 125.025 9.12764 123.075C7.32764 121.125 6.42764 118.525 6.42764 115.275C6.42764 112.425 7.17764 109.85 8.67764 107.55C10.1776 105.2 12.3776 103.35 15.2776 102C18.2276 100.6 21.7526 99.9 25.8526 99.9C31.3526 99.9 36.3276 100.725 40.7776 102.375C42.1776 102.875 42.8776 103.875 42.8776 105.375C42.8776 106.175 42.6026 106.9 42.0526 107.55C41.5026 108.2 40.7776 108.525 39.8776 108.525C39.5776 108.525 39.1776 108.425 38.6776 108.225C34.7776 106.875 30.7526 106.2 26.6026 106.2C22.6526 106.2 19.4276 106.95 16.9276 108.45C14.4776 109.95 13.2526 112.05 13.2526 114.75C13.2526 116.55 13.8276 118.025 14.9776 119.175C16.1776 120.275 17.6526 121.15 19.4026 121.8C21.2026 122.4 23.6276 123.05 26.6776 123.75C30.6276 124.7 33.8026 125.65 36.2026 126.6C38.6526 127.55 40.7276 129.025 42.4276 131.025C44.1776 133.025 45.0526 135.725 45.0526 139.125C45.0526 141.925 44.2526 144.45 42.6526 146.7C41.0526 148.9 38.8026 150.625 35.9026 151.875C33.0026 153.125 29.6526 153.75 25.8526 153.75ZM93.8185 164.4C92.8685 164.4 92.0685 164 91.4185 163.2L83.2435 153.45C81.9935 153.65 80.4935 153.75 78.7435 153.75C73.4935 153.75 68.8935 152.6 64.9435 150.3C60.9935 148 57.9435 144.825 55.7935 140.775C53.6435 136.725 52.5185 132.075 52.4185 126.825C52.5185 121.575 53.6435 116.925 55.7935 112.875C57.9435 108.825 60.9935 105.65 64.9435 103.35C68.8935 101.05 73.4935 99.9 78.7435 99.9C83.9935 99.9 88.5685 101.05 92.4685 103.35C96.4185 105.65 99.4685 108.85 101.618 112.95C103.818 117 104.968 121.625 105.068 126.825C104.968 132.675 103.543 137.8 100.793 142.2C98.0935 146.55 94.3435 149.725 89.5435 151.725L96.1435 159C96.7435 159.6 97.0435 160.325 97.0435 161.175C97.0935 162.025 96.7935 162.775 96.1435 163.425C95.4935 164.075 94.7185 164.4 93.8185 164.4ZM78.7435 147.375C82.7435 147.375 86.2185 146.475 89.1685 144.675C92.1185 142.875 94.3685 140.425 95.9185 137.325C97.4685 134.225 98.2435 130.725 98.2435 126.825C98.2435 122.925 97.4685 119.425 95.9185 116.325C94.3685 113.225 92.1185 110.775 89.1685 108.975C86.2185 107.175 82.7435 106.275 78.7435 106.275C74.6935 106.275 71.1935 107.175 68.2435 108.975C65.3435 110.775 63.1185 113.225 61.5685 116.325C60.0185 119.425 59.2435 122.925 59.2435 126.825C59.2435 130.725 60.0185 134.225 61.5685 137.325C63.1185 140.425 65.3435 142.875 68.2435 144.675C71.1935 146.475 74.6935 147.375 78.7435 147.375ZM137.583 153.75C134.033 153.75 130.608 153 127.308 151.5C124.008 150 121.308 147.725 119.208 144.675C117.108 141.575 116.058 137.8 116.058 133.35V103.725C116.058 102.775 116.383 101.975 117.033 101.325C117.683 100.625 118.483 100.275 119.433 100.275C120.383 100.275 121.183 100.625 121.833 101.325C122.533 101.975 122.883 102.775 122.883 103.725V133.575C122.883 136.575 123.558 139.125 124.908 141.225C126.308 143.325 128.133 144.9 130.383 145.95C132.633 147 135.033 147.525 137.583 147.525C140.133 147.525 142.533 147 144.783 145.95C147.033 144.9 148.833 143.325 150.183 141.225C151.583 139.125 152.283 136.575 152.283 133.575V103.725C152.283 102.775 152.608 101.975 153.258 101.325C153.908 100.625 154.708 100.275 155.658 100.275C156.608 100.275 157.408 100.625 158.058 101.325C158.758 101.975 159.108 102.775 159.108 103.725V133.35C159.108 137.8 158.058 141.575 155.958 144.675C153.858 147.725 151.158 150 147.858 151.5C144.558 153 141.133 153.75 137.583 153.75ZM171.654 153.375C170.654 153.375 169.829 153.05 169.179 152.4C168.579 151.75 168.279 150.95 168.279 150C168.279 149.6 168.404 149.1 168.654 148.5L187.779 103.35C188.179 102.45 188.729 101.725 189.429 101.175C190.179 100.575 191.079 100.275 192.129 100.275H192.879C193.929 100.275 194.804 100.575 195.504 101.175C196.254 101.725 196.829 102.45 197.229 103.35L216.354 148.5C216.604 149.1 216.729 149.6 216.729 150C216.729 150.95 216.404 151.75 215.754 152.4C215.154 153.05 214.354 153.375 213.354 153.375C212.654 153.375 212.004 153.2 211.404 152.85C210.854 152.45 210.429 151.925 210.129 151.275L205.254 139.575H179.754L174.879 151.275C174.579 151.925 174.129 152.45 173.529 152.85C172.979 153.2 172.354 153.375 171.654 153.375ZM182.379 133.35H202.629L192.504 108.975L182.379 133.35ZM231.136 153.375C230.186 153.375 229.386 153.05 228.736 152.4C228.086 151.75 227.761 150.95 227.761 150V104.1C227.761 103.15 228.086 102.35 228.736 101.7C229.386 101 230.186 100.65 231.136 100.65H248.611C255.411 100.65 260.511 102.05 263.911 104.85C267.311 107.65 269.011 111.325 269.011 115.875C269.011 118.875 268.161 121.625 266.461 124.125C264.811 126.575 262.386 128.35 259.186 129.45C262.786 130.4 265.236 132.65 266.536 136.2C267.886 139.7 268.561 143.15 268.561 146.55V150C268.561 150.95 268.236 151.75 267.586 152.4C266.936 153.05 266.136 153.375 265.186 153.375C264.136 153.375 263.286 153.075 262.636 152.475C262.036 151.825 261.736 151 261.736 150V147.75C261.736 145.25 261.511 142.95 261.061 140.85C260.611 138.7 259.536 136.8 257.836 135.15C256.136 133.45 253.561 132.6 250.111 132.6H234.586V150C234.586 150.95 234.236 151.75 233.536 152.4C232.886 153.05 232.086 153.375 231.136 153.375ZM248.161 126.15C252.461 126.15 255.861 125.3 258.361 123.6C260.911 121.9 262.186 119.5 262.186 116.4C262.186 113.4 261.086 111.1 258.886 109.5C256.736 107.9 253.036 107.1 247.786 107.1H234.586V126.15H248.161ZM284.529 153C283.579 153 282.779 152.675 282.129 152.025C281.479 151.375 281.154 150.575 281.154 149.625V104.1C281.154 103.15 281.479 102.35 282.129 101.7C282.779 101 283.579 100.65 284.529 100.65H314.604C315.504 100.65 316.254 100.975 316.854 101.625C317.504 102.225 317.829 102.975 317.829 103.875C317.829 104.775 317.504 105.525 316.854 106.125C316.254 106.725 315.504 107.025 314.604 107.025H287.979V123.6H311.904C312.804 123.6 313.554 123.925 314.154 124.575C314.804 125.175 315.129 125.925 315.129 126.825C315.129 127.725 314.804 128.475 314.154 129.075C313.554 129.675 312.804 129.975 311.904 129.975H287.979V146.625H314.604C315.504 146.625 316.254 146.95 316.854 147.6C317.504 148.2 317.829 148.95 317.829 149.85C317.829 150.75 317.504 151.5 316.854 152.1C316.254 152.7 315.504 153 314.604 153H284.529ZM345.482 153.75C339.132 153.75 333.182 152.55 327.632 150.15C327.032 149.9 326.532 149.5 326.132 148.95C325.732 148.35 325.532 147.725 325.532 147.075C325.532 146.225 325.807 145.5 326.357 144.9C326.957 144.25 327.707 143.925 328.607 143.925C329.107 143.925 329.582 144.025 330.032 144.225C334.632 146.275 339.557 147.3 344.807 147.3C353.557 147.3 357.932 144.425 357.932 138.675C357.932 137.175 357.357 135.925 356.207 134.925C355.107 133.925 353.732 133.15 352.082 132.6C350.432 132 348.082 131.3 345.032 130.5C340.982 129.45 337.707 128.45 335.207 127.5C332.707 126.5 330.557 125.025 328.757 123.075C326.957 121.125 326.057 118.525 326.057 115.275C326.057 112.425 326.807 109.85 328.307 107.55C329.807 105.2 332.007 103.35 334.907 102C337.857 100.6 341.382 99.9 345.482 99.9C350.982 99.9 355.957 100.725 360.407 102.375C361.807 102.875 362.507 103.875 362.507 105.375C362.507 106.175 362.232 106.9 361.682 107.55C361.132 108.2 360.407 108.525 359.507 108.525C359.207 108.525 358.807 108.425 358.307 108.225C354.407 106.875 350.382 106.2 346.232 106.2C342.282 106.2 339.057 106.95 336.557 108.45C334.107 109.95 332.882 112.05 332.882 114.75C332.882 116.55 333.457 118.025 334.607 119.175C335.807 120.275 337.282 121.15 339.032 121.8C340.832 122.4 343.257 123.05 346.307 123.75C350.257 124.7 353.432 125.65 355.832 126.6C358.282 127.55 360.357 129.025 362.057 131.025C363.807 133.025 364.682 135.725 364.682 139.125C364.682 141.925 363.882 144.45 362.282 146.7C360.682 148.9 358.432 150.625 355.532 151.875C352.632 153.125 349.282 153.75 345.482 153.75Z"
+                fill="#ffffff" />
+
+              <rect x="8.5" y="11.5" width="61" height="61" rx="7.5" fill="#1A1A1A" />
+              <path class="animSVGlogo" stroke-dasharray="35" stroke-dashoffset="35"
+                d="M18 24C18 22.3431 19.3431 21 21 21H25C26.6569 21 28 22.3431 28 24V28C28 29.6569 26.6569 31 25 31H21C19.3431 31 18 29.6569 18 28V24Z"
+                stroke="white" fill="white" />
+              <path class="animSVGlogo" stroke-dasharray="35" stroke-dashoffset="35"
+                d="M34 24C34 22.3431 35.3431 21 37 21H41C42.6569 21 44 22.3431 44 24V28C44 29.6569 42.6569 31 41 31H37C35.3431 31 34 29.6569 34 28V24Z"
+                stroke="#EFEFEF" fill="#EFEFEF" />
+              <path class="animSVGlogo" stroke-dasharray="35" stroke-dashoffset="35"
+                d="M34 56C34 54.3431 35.3431 53 37 53H41C42.6569 53 44 54.3431 44 56V60C44 61.6569 42.6569 63 41 63H37C35.3431 63 34 61.6569 34 60V56Z"
+                stroke="#626262" fill="#626262" />
+              <path class="animSVGlogo" stroke-dasharray="35" stroke-dashoffset="35"
+                d="M50 24C50 22.3431 51.3431 21 53 21H57C58.6569 21 60 22.3431 60 24V28C60 29.6569 58.6569 31 57 31H53C51.3431 31 50 29.6569 50 28V24Z"
+                stroke="#DEDEDE" fill="#DEDEDE" />
+              <path class="animSVGlogo" stroke-dasharray="35" stroke-dashoffset="35"
+                d="M18 40C18 38.3431 19.3431 37 21 37H25C26.6569 37 28 38.3431 28 40V44C28 45.6569 26.6569 47 25 47H21C19.3431 47 18 45.6569 18 44V40Z"
+                stroke="#CACACA" fill="#CACACA" />
+              <path class="animSVGlogo" stroke-dasharray="35" stroke-dashoffset="35"
+                d="M50 40C50 38.3431 51.3431 37 53 37H57C58.6569 37 60 38.3431 60 40V44C60 45.6569 58.6569 47 57 47H53C51.3431 47 50 45.6569 50 44V40Z"
+                stroke="#A6A6A6" fill="#A6A6A6" />
+              <path class="animSVGlogo" stroke-dasharray="35" stroke-dashoffset="35"
+                d="M18 56C18 54.3431 19.3431 53 21 53H25C26.6569 53 28 54.3431 28 56V60C28 61.6569 26.6569 63 25 63H21C19.3431 63 18 61.6569 18 60V56Z"
+                stroke="#919191" fill="#919191" />
+              <path class="animSVGlogo" stroke-dasharray="35" stroke-dashoffset="35"
+                d="M34 40C34 38.3431 35.3431 37 37 37H41C42.6569 37 44 38.3431 44 40V44C44 45.6569 42.6569 47 41 47H37C35.3431 47 34 45.6569 34 44V40Z"
+                stroke="#B3B3B3" fill="#B3B3B3" />
+              <rect class="animSVG2logo" x="8.5" y="11.5" width="61" height="61" rx="7.5" stroke="#A5A5A5"
+                stroke-width="3" />
+            </svg>
+
+            <span class="logonameH1">
+              <h1>GAME SQUARES</h1>
+            </span>
+
           </div>
- 
-          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center maxW300">
             <div class="d-flex">
-              <div class="me-2">
-                <select class="select_style" id="select_x" name="select">
-                  <option value="3" selected>3</option>
-                  <option value="2">2</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-                <span>x</span>
-                <select class="select_style" id="select_y" name="select">
-                  <option value="3" selected>3</option>
-                  <option value="2">2</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
+              <div class="me-2 d-flex flex-wrap align-items-center ">
+                <input id="select_x" class="select_style inp" type="number" value="3">
+                <span class="m-1">x</span>
+                <input id="select_y" class="select_style inp" type="number" value="3">
               </div>
-              <button id="Confirm_x_y" class="btn_style">Confirm</button>
-              <!-- <button id="test"> test</button> -->
+              <button id="Confirm_x_y" class="btn_style px-2">Confirm</button>
             </div>
+
 
             <div class="col-12 d-flex my-2 text-center bg_box">
               <div class="bg_box col-6">
@@ -79,35 +147,67 @@
               <div class="bg_box col-6">
                 <span class="fz-21">Time</span>
                 <div id="timer_block" class="fz-21"><span id="min">00</span>:<span id="sec">00</span></div>
-              </div> 
-            </div> 
- 
-              <div class="form-group col-12 d-flex justify-content-center align-items-center">
-                <input type="checkbox" id="Save_cookie">
-                <label for="Save_cookie">Save result in cookie</label> 
-              </div> 
+              </div>
+            </div>
           </div>
-
+        </div>
+        <div class="form-group col-12 d-flex justify-content-center align-items-center">
+          <input type="checkbox" id="Save_cookie">
+          <label for="Save_cookie">Save result in cookie</label>
         </div>
 
         <div id="CreateSquaresField"
-          class="style_box_next d-flex  justify-content-center flex-column align-items-center"></div>
+          class="style_box_next d-flex  justify-content-center flex-column align-items-center">
+          <div class="d-flex line line_0" disabled data-name_line="line_0">
+            <div class="BoxForBtn">
+              <button data-num="1" data-name_line="line_0" data-index_squares="0" class="squares btn_style">1</button>
+            </div> 
+            <div class="BoxForBtn">
+              <button data-num="2" data-name_line="line_0" data-index_squares="1" class="squares btn_style">2</button>
+            </div> 
+            <div class="BoxForBtn">
+              <button data-num="3" data-name_line="line_0" data-index_squares="2" class="squares btn_style">3</button>
+            </div>
+          </div>
 
+          <div class="d-flex line line_1" disabled data-name_line="line_1">
+            <div class="BoxForBtn">
+              <button data-num="4" data-name_line="line_1" data-index_squares="0" class="squares btn_style">4</button>
+            </div> 
+            <div class="BoxForBtn">
+              <button data-num="5" data-name_line="line_1" data-index_squares="1" class="squares btn_style">5</button>
+            </div> 
+            <div class="BoxForBtn">
+              <button data-num="6" data-name_line="line_1" data-index_squares="2" class="squares btn_style">6</button>
+            </div>
+          </div>
+
+          <div class="d-flex line line_2" disabled data-name_line="line_2">
+            <div class="BoxForBtn">
+              <button data-num="7" data-name_line="line_2" data-index_squares="0" class="squares btn_style">7</button>
+            </div> 
+            <div class="BoxForBtn">
+              <button data-num="8" data-name_line="line_2" data-index_squares="1" class="squares btn_style">8</button>
+            </div> 
+            <div class="BoxForBtn">
+              <button disabled="" data-num="x" data-name_line="line_2" data-index_squares="2"
+                class="squares btn_style">x</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="show_history" class="py-3 my-3" data-visibility="none">
+          <div class="d-flex justify-content-center align-items-center">
+            <h2>History</h2>
+          </div>
+          <div id="history">
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
   <script type="module" src="./assets/JavaScript/index.js"></script>
 </body>
 

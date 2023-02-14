@@ -11,7 +11,7 @@ function fun_CreateSquaresField(OBJ_LINE, CreateSquaresField) {
     OBJ_LINE[this_child.dataset.name_line][0].map((num, index) => {
       this_child.insertAdjacentHTML("beforeend", `
       <div class="BoxForBtn">
-        <button `+(num === "x" ? "disabled" : "")+` data-num="` + num + `" data-name_line="` + this_child.dataset.name_line + `" data-index_squares="` + index + `" class="squares btn_style">` + num + `</button>
+        <button `+(num === "x" ? "disabled" : "active")+` data-num="` + num + `" data-name_line="` + this_child.dataset.name_line + `" data-index_squares="` + index + `" class="squares btn_style">` + num + `</button>
       </div>
       `);
     });

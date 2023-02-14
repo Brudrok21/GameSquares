@@ -57,9 +57,7 @@ fun_create_history_list(COOKIE_INFO);
 const OBJ_LINE = new Object();
 const ARR_GRID = new Array();
 let squares;
-
 Confirm_x_y.addEventListener("click", () => {
- 
   //refresh
   ARR_GRID.length = 0;
   for (var member in OBJ_LINE) delete OBJ_LINE[member];
@@ -79,7 +77,7 @@ Confirm_x_y.addEventListener("click", () => {
   fun_CreateRandomArrGrid(select_x, select_y, ARR_GRID);
   fun_CreateObj_Line(select_x, select_y, OBJ_LINE, ARR_GRID);
 
- 
+
 
   //--
   fun_CreateSquaresField(OBJ_LINE, CreateSquaresField);
@@ -88,7 +86,6 @@ Confirm_x_y.addEventListener("click", () => {
   //--
   // fun_confetti_animation();
   fun_timer();
- 
 });
 
 
@@ -136,4 +133,3 @@ function fun_timer() {
     fun_finish(ARR_GRID, select_x, select_y, timer, OBJ, COOKIE_INFO, count_min, count_sec, Local_time_start);
   }, 1000);
 }
-  

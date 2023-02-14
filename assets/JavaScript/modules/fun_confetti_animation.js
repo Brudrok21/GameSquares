@@ -7,7 +7,9 @@ function fun_confetti_animation() {
     let random = Math.floor(Math.random() * (9 - 1)) + 1;
     let random_x = Math.floor(Math.random() * (80 - 15)) + 15;
     let random_size = Math.floor(Math.random() * (86 - 48)) + 48;
-    finish_animation.insertAdjacentHTML("beforeend", `<div class="div_confetti" style="left:`+random_x+`vw; width:`+random_size+`px;"><img class="confetti" src="./assets/images/confetti/` + random + `.png" alt="confetti.png"></div>`);
+    finish_animation.insertAdjacentHTML("beforeend", `
+    <div class="div_confetti" style="left:`+random_x+`vw; width:`+random_size+`px;"><img class="confetti" src="./assets/images/confetti/` + random + `.png" alt="confetti.png"></div>
+    `); 
   }
 
 
@@ -68,5 +70,5 @@ function fun_confetti_animation() {
   }
    
   setTimeout(() => { finish_animation.innerHTML="";}, 2500); 
-  // console.log(random);
+ 
 }export default fun_confetti_animation;
