@@ -51,10 +51,7 @@ function get_finish_animation() {
       delay:random_delay,
       duration: random_duration,
       iterations: 1
-    });
-
- 
-
+    }); 
   }
    
   setTimeout(() => { finish_animation.innerHTML="";}, 7500);  

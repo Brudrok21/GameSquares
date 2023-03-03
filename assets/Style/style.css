@@ -212,6 +212,12 @@ input.select_style{
   max-height: 75px;
   transition: 0.2s ease;
 }
+.squares:disabled, .squares[disabled="disabled"] {
+  /* color: #ff98981f; */
+  opacity: 0;
+  visibility: hidden; 
+  transition: 0ms !important;
+}
 .squares[active], .squares[active="active"] {
   opacity: 1;
 	-webkit-animation: vibrate-1 0.3s linear both;
@@ -232,17 +238,12 @@ input.select_style{
   visibility : hidden;
 }
 
-.squares:disabled {
-  /* color: #ff98981f; */
-  visibility: hidden;
-}
+ 
 
 .line {
   padding: 0px 20px;
 }
-#CreateSquaresField[disabled="disabled"] .line button, .line[disabled], .line[disabled] button { 
-  cursor: no-drop	;
-}
+ 
 #CreateSquaresField[disabled="disabled"] button {
   /* pointer-events: none; */
  
